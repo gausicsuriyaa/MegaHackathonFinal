@@ -67,6 +67,7 @@
   <ItemGroup>
     <Content Include="AgentView.aspx" />
     <Content Include="CenterView.aspx" />
+    <Content Include="Content\Data\AgentDashboard.xml" />
     <Content Include="Content\Data\AgentInfo.xml" />
     <Content Include="Content\Data\AgentKPI.xml" />
     <Content Include="Content\Data\CenterInfo.xml" />
@@ -96,6 +97,7 @@
     <Content Include="Services\CCTService.asmx" />
     <Content Include="SupView.aspx" />
     <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AgentView.aspx.cs">
@@ -133,6 +135,13 @@
     </Compile>
     <Compile Include="SupView.aspx.designer.cs">
       <DependentUpon>SupView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -68,5 +68,24 @@ namespace Vz.MegaHack.Data
 
             return supervisorItems;
         }
+
+        public static AgentInfo GetAgentInfo(string agentId)
+        {
+            XDocument doc = XDocument.Load(Path.Combine(PathManager.DataPath, agentInfoFileName));
+            var items = doc.Root.Elements("Agent").Where(i => i.Attribute("id").Value.Equals(agentId));
+            if (items.Count() > 0)
+            {
+                var item = items.FirstOrDefault();
+                return new AgentInfo()
+                {
+                    AgentId = Convert.ToString(item.Attribute("id").Value),
+                    AgentName = Convert.ToString(item.Attribute("name").Value),
+                    Date = Convert.ToDateTime(item.Attribute("date").Value),
+                    Points = Convert.ToInt32(item.Attribute("points").Value),
+                    PhotoFileName = Convert.ToString(item.Attribute("photoFileName").Value)
+                };
+            }
+            return null;
+        }
     }
 }

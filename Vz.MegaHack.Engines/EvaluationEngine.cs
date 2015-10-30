@@ -147,6 +147,49 @@ namespace Vz.MegaHack.Engines
 
             return items;
         }
+
+        public static List<AgentKPIScore> GetAgentDashboard(string agentId)
+        {
+            List<AgentKPIScore> items = new List<AgentKPIScore>();
+
+            List<KPIInfo> kpis = KPIReader.GetKPI();
+            List<AgentKPIInfo> agentKpis = KPIReader.GetAgentKPI();
+            AgentInfo agentInfo = AgentReader.GetAgentInfo(agentId);
+
+            var result = from k in kpis
+                         join ak in agentKpis on k.KpiId equals ak.KpiId
+                         where ak.AgentId == agentId
+                         orderby k.KpiName
+                         select new { k.KpiId, k.KpiName, ak.Date, ak.KpiValue, ak.HadTraining, ak.IsAwarded, ak.Description };
+
+            var kpiGroups = result.GroupBy(k => k.KpiName).Select(g => g.FirstOrDefault());
+
+            foreach (var kpiGroup in kpiGroups)
+            {
+                var kpiRows = result.Where(k => k.KpiName.Equals(kpiGroup.KpiName));
+
+                List<KPIScoreInfo> scoreList = new List<KPIScoreInfo>();
+                foreach (var row in kpiRows)
+                {
+                    scoreList.Add(new KPIScoreInfo()
+                    {
+                        Date = row.Date,
+                        Score = row.KpiValue.ToString(),
+                        HadTraining = row.HadTraining,
+                        IsAwarded = row.IsAwarded,
+                        Description = row.Description
+                    });
+                }
+
+                items.Add(new AgentKPIScore()
+                {
+                    KPIName = kpiGroup.KpiName,
+                    ScoreDetails = scoreList
+                });
+            }
+
+            return items;
+        }
     }
 
 }

@@ -1,0 +1,14 @@
+C:\Users\Administrator\Source\Repos\VzMegaHackathon4\Vz.MegaHack.Core\bin\Debug\Vz.MegaHack.Core.dll
+C:\Users\Administrator\Source\Repos\VzMegaHackathon4\Vz.MegaHack.Core\bin\Debug\Vz.MegaHack.Core.pdb
+C:\Users\Administrator\Source\Repos\VzMegaHackathon4\Vz.MegaHack.Core\bin\Debug\Vz.MegaHack.Entities.dll
+C:\Users\Administrator\Source\Repos\VzMegaHackathon4\Vz.MegaHack.Core\bin\Debug\Vz.MegaHack.Entities.pdb
+C:\Users\Administrator\Source\Repos\VzMegaHackathon4\Vz.MegaHack.Core\obj\Debug\Vz.MegaHack.Core.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Source\Repos\VzMegaHackathon4\Vz.MegaHack.Core\obj\Debug\Vz.MegaHack.Core.dll
+C:\Users\Administrator\Source\Repos\VzMegaHackathon4\Vz.MegaHack.Core\obj\Debug\Vz.MegaHack.Core.pdb
+D:\VzMegaHackathon4\Vz.MegaHack.Core\bin\Debug\Vz.MegaHack.Core.dll
+D:\VzMegaHackathon4\Vz.MegaHack.Core\bin\Debug\Vz.MegaHack.Core.pdb
+D:\VzMegaHackathon4\Vz.MegaHack.Core\bin\Debug\Vz.MegaHack.Entities.dll
+D:\VzMegaHackathon4\Vz.MegaHack.Core\bin\Debug\Vz.MegaHack.Entities.pdb
+D:\VzMegaHackathon4\Vz.MegaHack.Core\obj\Debug\Vz.MegaHack.Core.csprojResolveAssemblyReference.cache
+D:\VzMegaHackathon4\Vz.MegaHack.Core\obj\Debug\Vz.MegaHack.Core.dll
+D:\VzMegaHackathon4\Vz.MegaHack.Core\obj\Debug\Vz.MegaHack.Core.pdb

@@ -42,7 +42,11 @@ namespace Vz.MegaHack.Data
                 elements.Add(new AgentKPIInfo() {
                     AgentId = Convert.ToString(item.Attribute("id").Value),
                     KpiId = Convert.ToString(item.Attribute("kpiId").Value),
-                    KpiValue = Convert.ToInt32(item.Attribute("kpiValue").Value)
+                    KpiValue = Convert.ToInt32(item.Attribute("kpiValue").Value),
+                    Date = Convert.ToDateTime(item.Attribute("date").Value),
+                    HadTraining=Convert.ToBoolean(item.Attribute("hadTraining").Value),
+                    IsAwarded=Convert.ToBoolean(item.Attribute("isAwarded").Value),
+                    Description=Convert.ToString(item.Attribute("description").Value)
                 });
             }
 

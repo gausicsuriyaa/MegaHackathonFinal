@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Supervisors>
-  <Supervisor id="001" name="Supervisor 1" centerId="001"/>
-  <Supervisor id="002" name="Supervisor 2" centerId="001"/>
-  <Supervisor id="003" name="Supervisor 3" centerId="001"/>
-  <Supervisor id="004" name="Supervisor 4" centerId="001"/>
-  <Supervisor id="005" name="Supervisor 5" centerId="002"/>
-  <Supervisor id="006" name="Supervisor 6" centerId="002"/>
-  <Supervisor id="007" name="Supervisor 7" centerId="002"/>
-  <Supervisor id="008" name="Supervisor 8" centerId="002"/>
+  <Supervisor id="001" name="Jorge Wimbish" centerId="001"/>
+  <Supervisor id="002" name="Billie Watwood" centerId="001"/>
+  <Supervisor id="003" name="Heriberto Beesley" centerId="001"/>
+  <Supervisor id="004" name="Shad Weathersby" centerId="001"/>
+  <Supervisor id="005" name="Shon Crisman" centerId="002"/>
+  <Supervisor id="006" name="Amos Alexis" centerId="002"/>
+  <Supervisor id="007" name="Phil Favreau" centerId="002"/>
+  <Supervisor id="008" name="Ismael Amodeo" centerId="002"/>
 </Supervisors>
